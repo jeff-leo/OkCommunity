@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.liu.sportnews.utils.LoginLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reg_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/main_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:id="@+id/center_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/k" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="中文(中国)"
+                android:textColor="@color/loginlight" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/name_wrap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/loginlight">
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="请输入用户账号"
+                        android:inputType="number"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:textColor="@color/colorBackground" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/pass_wrap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/loginlight">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="请输入密码"
+                        android:inputType="textPassword|number"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:textColor="@color/colorBackground" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/pass_confim_wrap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/loginlight">
+
+                    <EditText
+                        android:id="@+id/password_confim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="请确认密码"
+                        android:inputType="textPassword|number"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:textColor="@color/colorBackground" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/reg_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="#15ffffff"
+                    android:text="注册"
+                    android:textColor="@color/loginlight"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/center_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/return_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:drawableRight="@drawable/forward"
+                android:text="返回登录"
+                android:textColor="@color/loginlight"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/reg_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</com.liu.sportnews.utils.LoginLayout>

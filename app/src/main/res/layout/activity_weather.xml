@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_appBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/city_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wechatColor" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/city_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/city_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBackground"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBackground"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/selector_tline"
+            android:clickable="true"
+            android:id="@+id/add_city">
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/add"
+                android:layout_centerInParent="true"
+                android:clickable="false"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/selector_tline"
+            android:clickable="true"
+            android:id="@+id/refresh">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/refresh"
+                android:layout_centerInParent="true"
+                android:clickable="false"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/city_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/city_deg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorBackground"
+                    android:textSize="65sp" />
+
+                <TextView
+                    android:id="@+id/city_deg_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/city_deg"
+                    android:text="°"
+                    android:textColor="@color/colorBackground"
+                    android:textSize="50sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/city_deg_logo">
+
+                    <TextView
+                        android:id="@+id/city_wind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBackground"
+                        android:textSize="25sp"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/city_wind_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/colorBackground"
+                        android:textSize="30sp"
+                        android:typeface="serif" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/city_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="right"
+                    android:textColor="@color/colorBackground"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:id="@+id/city_detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="right"
+                    android:textColor="@color/colorBackground"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/weather_bottom" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_to_msg_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2016-12-12 12:12"
+            android:textSize="12sp"
+            android:background="#f5f5f5"
+            android:clickable="true"
+            android:longClickable="true"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/rb_head_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:focusable="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/head"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"/>
+
+        <TextView
+            android:id="@+id/tv_to_msg"
+            android:layout_toLeftOf="@id/rb_head_image"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_chat_to"
+            android:textSize="15sp"
+            android:textColor="#ff000000"
+            android:gravity="left|center"
+            android:minHeight="2dp"
+            android:lineSpacingExtra="1dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb_head_image"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/tv_to_msg"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="JANFE"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

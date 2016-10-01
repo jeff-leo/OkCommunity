@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/head"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/main_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:text="点击登录"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"/>
+
+</LinearLayout>

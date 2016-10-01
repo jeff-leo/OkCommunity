@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/city_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3b3b3b"
+        android:gravity="center"
+        android:text="选择城市"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/city_province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/wechatColor"
+        android:divider="#aeaeae"
+        android:dividerHeight="1dp"/>
+
+    <ListView
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#e4e4e4"
+        android:divider="#aeaeae"
+        android:dividerHeight="1dp"
+        android:visibility="gone"/>
+</LinearLayout>

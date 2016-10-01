@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center"
+                android:background="@drawable/selector_tl_btn"
+                android:clickable="true"
+                android:id="@+id/alert">
+
+                <ImageView
+                    android:id="@+id/alert_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/message"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/colorBackground"
+            app:tabSelectedTextColor="@color/colorBackground"
+            app:tabTextColor="#B3E5FC">
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

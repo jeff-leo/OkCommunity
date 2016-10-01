@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"> <!-- 设置group内最多只有一项被选择-->
+        <item android:id="@+id/myhome"
+            android:icon="@drawable/home"
+            android:title="主页"
+            android:checked="true"/>
+        <item android:id="@+id/faviorite"
+            android:icon="@drawable/ic_favorite_black_48dp"
+            android:title="收藏" />
+    </group>
+
+    <item android:title="更多">
+        <menu>
+            <item android:id="@+id/setting"
+                android:icon="@drawable/ic_brightness_7_black_48dp"
+                android:title="设置"
+                android:checkable="true"/>
+            <item android:id="@+id/about"
+                android:icon="@drawable/ic_error_black_48dp"
+                android:title="关于"
+                android:checkable="true"/>
+            <item android:id="@+id/exit"
+                android:icon="@drawable/ic_power_settings_new_black_48dp"
+                android:title="注销"
+                android:checkable="true"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/found_head"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:clickable="true"
+    android:background="@drawable/selector_click"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/header"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/head"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="10dp"
+                android:text="未填写昵称"
+                android:textColor="#99000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/reg_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:text="尚未加入社区"
+                android:textColor="#99000000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableRight="@drawable/forward"
+        android:gravity="center"
+        android:text="查看主页"
+        android:textColor="#99000000"
+        android:drawablePadding="10dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

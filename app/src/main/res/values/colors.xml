@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#448AFF</color>
+    <color name="colorBackground">#fff</color>
+    <color name="colorlowBackground">#727272</color>
+    <color name="picBackGroundColor">#464646</color>
+    <color name="loginlight">#C5CAE9</color>
+    <color name="itemClickColor">#d1cfcf</color>
+    <color name="imageButtonColor">#FF4081</color>
+    <color name="wechatColor">#edecec</color>
+    <color name="weatherColor">#B2EBF2</color>
+    <color name="colorYellow">#FFEB3B</color>
+    <color name="colorTimeline">#55000000</color>
+    <color name="colorComment">#fdfdfd</color>
+    <color name="colorSComment">#f2f2f2</color>
+    <color name="colorNickname">#196cae</color>
+    <color name="colorToolItem">#10000000</color>
+    <color name="colorToolItem2">#20000000</color>
+</resources>

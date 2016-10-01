@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/edit_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="?attr/homeAsUpIndicator">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:background="@drawable/selector_tline"
+            android:clickable="true"
+            android:id="@+id/sureBtn">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/yes"
+                android:layout_centerInParent="true"
+                android:clickable="false"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_below="@+id/edit_toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/hihtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取一个拉风的名字更容易让别人记住"
+        android:textColor="#99000000"
+        android:textSize="16sp"
+        android:layout_below="@+id/infoText"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

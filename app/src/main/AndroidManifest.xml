@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liu.sportnews" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".FlashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewsDetailActivity" >
+        </activity>
+        <activity android:name=".CategoryActivity" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".RegActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity android:name=".MyCenterActivity" >
+        </activity>
+        <activity android:name=".PicActivity" >
+        </activity>
+        <activity android:name=".PicDetailActivity" >
+        </activity>
+        <activity android:name=".RobotActivity" >
+        </activity>
+        <activity android:name=".WeChatActivity" >
+        </activity>
+        <activity android:name=".WeatherActivity" >
+        </activity>
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".MyEditActivity" >
+        </activity>
+        <activity
+            android:name=".EditInfoActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity android:name=".TimeLineActivity" >
+        </activity>
+        <activity
+            android:name=".PublishTLActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name=".CommentActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity android:name=".AlertActivity" >
+        </activity>
+        <activity android:name=".MyTimeLineActivity" >
+        </activity>
+
+        <receiver
+            android:name=".Broadcast.CommentBroadcast"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+        <receiver
+            android:name=".Broadcast.WeatherBroadcast"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <service
+            android:name=".Service.WeatherService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service android:name=".Service.CommentService" >
+        </service>
+
+        <activity android:name=".SettingActivity" >
+        </activity>
+        <activity android:name=".DevelopInfoActivity" >
+        </activity>
+        <activity android:name=".SendFeedBackActivity" android:windowSoftInputMode="adjustResize|stateVisible">
+        </activity>
+    </application>
+
+</manifest>

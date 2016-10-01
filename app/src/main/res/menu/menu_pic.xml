@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/download"
+        android:title="下载照片"
+        android:orderInCategory="80"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/collect"
+        android:title="收藏照片"
+        android:orderInCategory="90"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/share"
+        android:title="分享照片"
+        app:showAsAction="never"/>
+
+</menu>

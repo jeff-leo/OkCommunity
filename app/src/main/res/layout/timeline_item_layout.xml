@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tl_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/selector_click"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tl_head_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:focusable="false"
+        android:gravity="center"
+        android:src="@drawable/head"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/nick_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tl_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="匿名用户"
+                android:textColor="#99000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/tl_sex_icon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/male"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/tl_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一周前"
+                    android:textColor="@color/colorTimeline"
+                    android:textSize="12sp"
+                    android:layout_toLeftOf="@+id/tl_forward"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/tl_forward"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/forward"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nick_name_layout"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="这是我的第一条朋友圈，希望大家能够和平相处，共同维护尖锋社区的和睦这是我的第一条朋友圈，希望大家能够和平相处，"
+            android:textColor="#95000000"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tl_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tl_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广州"
+                android:textColor="@color/colorTimeline"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/tl_comment"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/comment" />
+
+                <TextView
+                    android:id="@+id/tl_comment_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/colorTimeline"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
