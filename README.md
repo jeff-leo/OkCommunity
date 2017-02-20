@@ -10,6 +10,14 @@ ok社区的安卓客户端和后台都是我自己写的，虽然安卓开发不
 （欢迎大家star和下载，这是给我的动力）
 
 ## **app 演示图：**
+![这里写图片描述](http://img.blog.csdn.net/20170220194353276?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVmZmxlbw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170220203547360?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVmZmxlbw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170220203635110?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVmZmxlbw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170220203652504?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVmZmxlbw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170220203703239?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVmZmxlbw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170220203715001?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVmZmxlbw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170220203758881?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVmZmxlbw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170220203815334?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVmZmxlbw==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 - 更多功能请下载app自行体验。
 
